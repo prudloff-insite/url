@@ -133,7 +133,7 @@ class Query extends AbstractArray implements QueryInterface, ArrayAccess
     /**
      * {@inheritdoc}
      */
-    public function offsetSet($offset, $value)
+    public function offsetSet($offset, $value): void
     {
         if (is_null($offset)) {
             throw new RuntimeException('offset can not be null');
